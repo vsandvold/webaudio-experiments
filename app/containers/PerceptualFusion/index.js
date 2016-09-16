@@ -24,7 +24,9 @@ export class PerceptualFusion extends React.Component { // eslint-disable-line r
           { name: 'description', content: 'Description of PerceptualFusion' },
         ]}
       />
-        <FormattedMessage {...messages.header} />
+        <h1>
+          <FormattedMessage {...messages.header} />
+        </h1>
         <output>{this.props.frequency} Hz</output>
         <div>
           <input type='range' min='0' max='22100'
