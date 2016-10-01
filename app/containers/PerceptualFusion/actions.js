@@ -6,11 +6,11 @@
 
 import {
   SET_FREQUENCY,
-} from './constants'
+} from './constants';
 
 export function setFrequency(frequency) {
   return {
     type: SET_FREQUENCY,
-    frequency
-  }
+    frequency,
+  };
 }

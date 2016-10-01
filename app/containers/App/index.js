@@ -13,7 +13,7 @@
 
 import React from 'react';
 
-import 'muicss/dist/css/mui.min.css'
+import 'muicss/dist/css/mui.min.css';
 
 import styles from './styles.css';
 
@@ -28,7 +28,7 @@ export default class App extends React.Component { // eslint-disable-line react/
       <div>
         <div className="mui-appbar">
         </div>
-        <div className="{styles.container} mui-container-fluid">
+        <div className={`${styles.container} mui-container-fluid`}>
           {React.Children.toArray(this.props.children)}
         </div>
       </div>

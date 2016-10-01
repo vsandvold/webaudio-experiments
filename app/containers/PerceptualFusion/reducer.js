@@ -4,22 +4,22 @@
  *
  */
 
-import { fromJS } from 'immutable'
+import { fromJS } from 'immutable';
 import {
   SET_FREQUENCY,
-} from './constants'
+} from './constants';
 
 const initialState = fromJS({
-  frequency: 440
-})
+  frequency: 440,
+});
 
 function perceptualFusionReducer(state = initialState, action) {
   switch (action.type) {
     case SET_FREQUENCY:
-      return state.set('frequency', action.frequency)
+      return state.set('frequency', action.frequency);
     default:
-      return state
+      return state;
   }
 }
 
-export default perceptualFusionReducer
+export default perceptualFusionReducer;
